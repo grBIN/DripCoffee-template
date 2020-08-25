@@ -1,0 +1,128 @@
+.scroll__icon {
+  cursor: pointer;
+  z-index: 1020;
+}
+
+.scroll__icon span {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.scroll__icon--black span {
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.scroll__icon span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.scroll__icon span:nth-of-type(2) {
+  bottom: 65px;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+.scroll__icon span:nth-of-type(3) {
+  bottom: 50px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.inst-btn {
+  width: 250px;
+  height: 40px;
+  z-index: 50;
+  // background-color: white;
+  // box-shadow: 0 20px 30px 0 rgba(118, 126, 173, 0.10);
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 20px;
+  padding: 10px;
+}
+.media-btns {
+  margin-left: 40%;
+}
+
+.post {
+  &__wrapper {
+    background-image: url(../img/pattern.png);
+    padding: 80px;
+    padding-top: 280px;
+    background-size: 20%;
+    background-repeat: repeat;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+  }
+
+  width: 80%;
+  min-height: 70vh;
+  background-color: white;
+  box-shadow: 0 20px 30px 0 rgba(118, 126, 173, 0.10);
+  border-radius: 20px;
+  // padding: 100px;
+  margin: 0 auto;
+  padding: 60px;
+  &__header {
+    height: 300px;
+    background-color: white;
+    // display: flex;
+    // flex-flow: row wrap;
+    margin-bottom: 40px;
+  }
+  &__photo {
+    margin-top: -150px;
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 20px;
+    // margin-left: 60px;
+    position: absolute;
+    left: 20%;
+  }
+
+  &__title {
+    width: 60%;
+    margin-left: 40%;
+  }
+
+
+  &__main {
+    align-items: center;
+  }
+}

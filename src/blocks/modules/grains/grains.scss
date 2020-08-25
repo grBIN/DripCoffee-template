@@ -1,0 +1,69 @@
+.grains {
+    height: 100vh;
+    background-image: url(../img/grains.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+    &__text {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 100px;
+    }
+
+    &__title {
+        font-size: 64px;
+        width: 100%;
+    }
+
+    &__subtitle {
+        font-size: 36px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 1100PX){
+    .grains {
+        &__text {
+            left: 50px;
+            top:65%;
+        }
+        &__title {
+            font-size: 56px;
+            width: 100%;
+        }
+        &__subtitle {
+            font-size: 28px;
+        }
+    }
+}
+@media screen and (max-width: 650px){
+    .grains {
+        &__text {
+            top:70%;
+        }
+        &__title {
+            font-size: 36px;
+            width: 100%;
+        }
+        &__subtitle {
+            font-size: 20px;
+        }
+    }
+}
+@media screen and (max-width: 500px){
+    .grains {
+        &__text {
+            left: 20px;
+        }
+        &__title {
+            font-size: 32px;
+            width: 90%;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+    }
+}

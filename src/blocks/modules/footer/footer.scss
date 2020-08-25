@@ -1,0 +1,147 @@
+.footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    z-index: 1010;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(black, 1);
+
+    &__left {
+        color: #F8C064;
+        margin-left: 100px;
+    }
+    &__logo {
+        margin-bottom: 20px;
+    }
+    &__right {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: end;
+    }
+
+    &__text {
+        margin-right: 20px;
+    }
+    &__question {
+        text-align: end;
+        display: block;
+        color: #F8C064;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    &__phone {
+        display: block;
+        color: #F8C064;
+        font-weight: 700;
+        font-size: 36px;
+        text-decoration: none;
+
+        & svg {
+            display: none;
+        }
+    }
+    &__phone:hover {
+        color: darken(#F8C064, 10%)
+    }
+
+    &__social {
+        margin-right: 100px;
+    }
+    &__social .icon:hover path {
+        fill: darken(#F8C064, 10%);
+    }
+    &__social .icon:hover {
+        cursor: pointer;
+    }
+
+    &__bottom {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+        display: flex;
+        justify-content: space-between;
+        & span {
+            color: #F8C064;
+        }
+    }
+    &__partners svg {
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    &__partners a {
+        color: #F8C064;
+        text-decoration: none;
+    }
+    &__partners a:hover {
+        color: darken(#F8C064, 10%);
+    }
+}
+
+@media screen and (max-width: 850px){
+    .footer {
+        &__left {
+            margin-left: 50px;
+        }
+        &__right {
+            margin-right: 50px;
+        }
+        &__social {
+            margin-right: 0;
+        }
+        &__bottom {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 700px){
+    .footer {
+        &__left {
+            margin-left: 20px;
+        }
+        &__right {
+            margin-right: 20px;
+        }
+        &__social {
+            margin-right: 0;
+        }
+        &__bottom {
+
+            display: flex;
+            flex-flow: column nowrap;
+            padding-left: 20px;
+            padding-right: 20px;
+            
+            & span {
+                order: 2;
+            }
+        }
+        &__phone span,
+        &__question {
+            display: none;
+        }
+        &__phone svg {
+            display: inline-block;
+            height: 45px;
+            margin-right: -20px;
+        }
+        &__partners {
+            & span {
+                width: 100%;
+            }
+            & svg {
+                display: none;
+            }
+            margin-top: 20px;
+            margin-bottom: 10px;
+            order: 1;
+            width: 100%;
+        }
+    }
+}

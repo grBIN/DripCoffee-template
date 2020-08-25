@@ -1,0 +1,125 @@
+.offer {
+    // margin-top: 100px;
+    position: relative;
+    height: 100%;
+    background-color: #fff;
+   &__items {
+       display: flex;
+       margin-right: 100px;
+       width: 100%;
+       height: 100%;
+    //    padding-left: 100px;
+       overflow: hidden;
+   }
+   &__item {
+    margin-top: 150px;
+    width: 300px;
+    box-shadow: 0 20px 30px 0 rgba(118, 126, 173, 0.10);
+    height: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 80px;
+    margin-bottom: 100px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    }
+
+    &__item .item__img {
+        overflow: visible;
+        margin-top: -80px;
+        width: 200px;
+        height: 300px;
+        object-fit: contain;
+    }
+    &__item .item__title {
+        margin-top: 20px;
+        font-size: 36px;
+    }
+}
+
+.section-title {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    & h2 {
+        margin-top: 50px;
+        font-size: 36px;
+    }
+    & img {
+        margin-top: 20px;
+        width: 200px;
+        height: auto;
+    }
+}
+.strength {
+    margin-left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__text {
+        font-size: 12px;
+        display: flex;
+        flex-flow: column nowrap;
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 2px solid black;
+    }
+    &__text span {
+        text-align: end;
+    }
+}
+@media screen and (max-width: 750px){
+    .offer {
+        .section-title h2 {
+            text-align: center;
+            font-size: 32px;
+        }
+        .swiper-wrapper {
+            margin-left: 50px;
+        }
+        &__item {
+            margin-top: 150px;
+            width: 300px;
+            height: auto;
+            padding-bottom: 40px;
+        }
+        &__item .item__img {
+            width: 90%;
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    .offer {
+        .swiper-wrapper {
+            margin-left: 20px;
+        }
+        &__item {
+            margin-top: 100px;
+            padding: 20px;
+            width: 200px;
+            height: auto;
+        }
+        &__item .item__img {
+            width: 90%;
+            height: auto;
+        }
+        &__item .item__title {
+            font-size: 24px;
+        }
+    }
+    .strength {
+    &__text {
+        font-size: 10px;
+        display: none;
+    }
+    &__img svg {
+        width: 10px;
+    }
+    }
+}
+
